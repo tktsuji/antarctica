@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Antarctica: Quiz</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    
+    <body class="quiz">
+        <div class="wrapper">
+            <header>
+                <img id="top" src="images/logo.jpg" alt="pic"/>
+            </header>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="animals.html">Animals</a></li>
+                    <li><a href="landforms.html">Landforms</a></li>
+                    <li><a href="explorers.html">Explorers</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+            
+            <h1>Quiz</h1>
+            
+            <div class="quizContainer" id="quizContainer">
+                <div class="question" id="question"></div>
+                <label class="option"> <input type="radio" name="option" value="1"/> <span id="opt1"></span></label>
+                <label class="option"> <input type="radio" name="option" value="2"/> <span id="opt2"></span> </label>
+                <label class="option"> <input type="radio" name="option" value="3"/> <span id="opt3"></span> </label>
+                <label class="option"> <input type="radio" name="option" value="4"/> <span id="opt4"></span> </label>
+                <button class="nextQuestion" id='nextButton' onclick="loadNextQuestion();">Next</button>
+            </div>
+            
+            <div class="resultContainer" id="result" style="display:none">
+                <p>Your Score:</p>
+                <p id="score"></p>
+            </div>
+            <footer>Copyright &copy; Person</footer>
+            <script src="quiz.js"></script>
+        </div>
+    </body>
+</html>
