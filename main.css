@@ -1,0 +1,754 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: white;
+    font-family: Georgia; 
+}
+
+h1, h2{
+    font-weight: bold;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    font-size: 120%;
+    line-height: 150%;
+}
+
+header img {
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-bottom: 2px;
+    width: 30%;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background-color: #04232A;
+   /* border: none;
+    border-radius:0px;*/
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    height: 50px;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+
+#mainpic {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.section1 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #e6f5fa;
+    text-align: center;
+    color: #06a2d2;
+}
+
+.section1 h1 {
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    float: left;
+    color: #04232A;
+}
+
+.section1 h2 {
+    font-weight: normal;
+}
+
+#summary {
+    float: left;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    text-align: center;
+    color: #04232A;
+}
+
+.section1 img {
+    width: 75%;
+}
+
+.column0, .column5 {
+    width: 10%;
+    float: left;
+}
+
+.column1, .column2, .column3, .column4 {
+    width: 20%;
+    float: left;
+}
+
+.section2 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #055975;
+    text-align: center;
+    color: white;
+    float: left;
+    display: table;
+}
+
+.txt-container {
+    width: 60%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.img-container {
+    width: 40%;
+    height: 100%;
+    padding-right: 5%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.section2 .img-container img {
+    width: 300px;
+    height: 300px;
+}
+
+.section3 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #e0edf5; /*#51A0C4;*/
+    color: #04232A;
+    text-align: center;
+    display: table;
+}
+
+.sec3-content {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.section3 img {
+    max-width: 175px;
+    max-height: 175px;
+}
+
+.section4 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #006379;
+    text-align: center;
+    float: left;
+    display: table;
+    color: white;
+}
+
+.section4 .img-container {
+    padding-left: 8%;
+}
+
+.section4 .img-container img {
+    height: 250px;
+    width: 250px;
+}
+
+.section4 .txt-container {
+    padding-left: 0%;
+    padding-right: 12%;
+}
+
+footer {
+    width: 100%;
+    background-color: #04232A;
+    float: left;
+    color: white;
+    font-size: 20px;
+}
+
+#link2top {
+    width: 100%;
+    height: auto;
+    background-color: #006379;
+    float: left;
+    text-align: center;
+}
+
+#link2top a {
+    color: white;
+}
+
+/* --------------------- ANIMALS ------------------ */
+
+.animals h1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0;
+    text-align: center;
+    background-color: #e6f5fa;
+}
+
+.animals p {
+    margin: 0;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    background-color: #e6f5fa;
+}
+
+.card {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.front {
+    background-color: #e6f5fa;
+}
+
+.card ul {
+    padding-bottom: 50%;
+}
+.card li {
+    position: relative;
+    width: 25%;
+    margin: 0;
+    display: block;
+    float: left;
+}
+
+.card li div {
+    width: 100%;
+    padding: 50% 0;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.card div.back {
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateY(90deg);
+}
+
+.card div.front {
+    position: absolute;
+}
+
+#back1 { 
+    background-image: url(images/adeliepenguin.jpg); 
+    background-position: right;
+}
+#back2 { 
+    background-image: url(images/chinstrap2.jpg); 
+    background-position: center;
+}
+#back3 { 
+    background-image: url(images/gentoo2.jpg); 
+    background-position: center;
+}
+#back4 { 
+    background-image: url(images/emperor2.jpg); 
+    background-position: center;
+}
+#back5 { 
+    background-image: url(images/wanderingalbatross2.jpg); 
+    background-position: center;
+}
+#back6 { 
+    background-image: url(images/skua.jpg); 
+    background-position: center;
+}
+#back7 { 
+    background-image: url(images/snowpetrel.jpg); 
+    background-position: center;
+}
+#back8 { 
+    background-image: url(images/yellowbilledpintail.jpg); 
+    background-position: left;
+}
+#back9 {
+    background-image: url(images/furseal.jpg);
+    background-position: center;
+}
+#back10 {
+    background-image: url(images/leopardseal.jpg);
+    background-position: center;
+}
+#back11 {
+    background-image: url(images/elephantseal.jpg);
+    background-position: left;
+}
+#back12 {
+    background-image: url(images/weddellseal.jpg);
+    background-position: center;
+}
+#back13 {
+    background-image: url(images/humpback.jpg);
+    background-position: center;
+}
+#back14 {
+    background-image: url(images/minke.jpg);
+    background-position: center;
+}
+#back15 {
+    background-image: url(images/bluewhale.jpeg);
+    background-position: left;
+}
+#back16 {
+    background-image: url(images/killerwhale.jpg);
+    background-position: center;
+}
+#back17 {
+    background-image: url(images/krill.jpg);
+    background-position: center;
+}
+#back18 {
+    background-image: url(images/toothfish.jpg);
+    background-position: center;
+}
+#back19 {
+    background-image: url(images/icefish.jpg);
+    background-position: right;
+}
+#back20 {
+    background-image: url(images/antarcticmidge.jpg);
+    background-position: center;
+}
+
+li:hover div.front {
+    animation: twirl 0.2s ease-in forwards;
+}
+
+li:hover div.back {
+    animation: twirl 0.2s 0.2s ease-out forwards reverse;
+}
+
+@keyframes twirl {
+    0%{ transform: rotateY(0deg) }
+    100%{ transform: rotateY(90deg) }
+}
+
+/* -------------------- LANDFORMS ----------------- */
+
+.landforms h1 {
+    padding: 5%;
+    margin: 0;
+    background-color: #e6f5fa;
+    text-align: center;
+}
+
+.landforms p {
+    text-align: left;
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #e6f5fa;
+}
+
+.tablesection {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    float: left;
+    background-color: #e6f5fa;
+}
+table {
+    margin: 5% auto 5% auto;
+    width: 95%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table img {
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: .5%;
+}
+
+.landform {
+    width: 20%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.descrip, .example {
+    width: 40%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+/* -------------------- EXPLORERS ----------------- */
+
+.explorers h1, .explorers h2 {
+    padding-top: 5%;
+    margin: 0;
+    background-color: #e6f5fa;
+    text-align: center;
+}
+
+.timeline {
+    margin: 0;
+    list-style: none;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    background-color: #e6f5fa;
+}
+
+
+.timeline li {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+  }
+
+.date {
+    width: 130px;
+    float: left;
+    margin-top: 20px;
+  }
+
+.content {
+    width: 75%;
+    float: left;
+    border-left: 3px gray solid;
+    padding-left: 30px;
+  }
+
+.content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #055975;
+    position: absolute;
+    left: 126px;
+    top: 26px;
+    border-radius: 100%;
+} 
+
+/* --------------------- QUIZ --------------------- */
+
+.quiz .wrapper {
+    background-color: #e6f5fa;
+}
+
+.quiz header {
+    background-color: white;
+}
+
+.quiz h1 {
+    padding: 5%;
+    margin: 0;
+    text-align: center;
+}
+
+.quizContainer, .resultContainer {
+    background: rgba(255, 255, 255, 0.9);
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-bottom: 300px;
+    float: left;
+    box-shadow: 0 0 3px 3px #fff;
+}
+
+.question {
+    margin: 2% 10% 2% 10%;
+}
+
+.option {
+    width: 80%;
+    margin: 1% 10% 1% 10%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nextQuestion {
+    padding: 0;
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+    float: right;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 10%;
+    font-size: 18px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.resultContainer {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+/* ------------------ MEDIA QUERIES --------------- */
+
+@media only screen and (max-width: 960px) {
+    [class="wrapper"] {
+        font-size: 110%;
+    }
+    
+    .section1 img {
+        width: 50%;
+    }
+    
+    .section2 {
+        height: 400px;
+    }
+    
+    .section2 .img-container img {
+        height: 250px;
+        width: 250px;
+    }
+    
+    .section3 img {
+        max-width: 125px;
+        max-height: 125px;
+    }
+    
+    .section4 {
+        height: 400px;
+    }
+    
+    .section4 .img-container img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* Animals */
+    .card li div {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    /* Animals */
+    .card li {
+        width: 50%;
+    }       
+}
+
+@media only screen and (max-width: 750px) {
+    [class="wrapper"] {
+        font-size: 100%;
+        line-height: 130%;
+    }
+    
+    .section1 h1 {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .section1 h2 {
+        font-size: 125%;
+    }
+    
+    .section2 {
+        padding: 0% 8% 8% 8%;
+    }
+
+    .section4 {
+        padding: 8% 8% 0% 8%;
+    }
+    
+    .section2 .img-container img {
+        width: 175px;
+        height: 175px;
+    }
+    
+    .section4 .img-container img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .img-container {
+        display: inline;
+        width: 100%;
+    }
+    
+    .txt-container {
+        display: inline;
+        width: 100%;
+    }
+    
+    /* Landforms */
+    table th {
+      display: none;
+    }
+    
+    .landform {
+        width: 100%;
+        font-weight: bold;
+    }
+    .descrip, .example {
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    table td {
+        display: block;
+        text-align: left;
+        font-size: 16px;
+        width: 70%;
+        padding: 1%;
+    }
+    
+}
+
+@media only screen and (max-width: 660px) {
+    /* Timeline */
+    .timeline {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    /* Timeline */
+    .content {
+        width: 90%;
+    }
+   .content:before {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media only screen and (max-width: 604px) {
+    h1 {
+        font-size: 150%;    
+    }
+    
+    .column0, .column5 {
+        width: 6%;
+        float: left;
+    }
+
+    .column1, .column2, .column3, .column4 {
+        width: 22%;
+        float: left;
+    }
+    
+    .section1 p {
+        font-size: 90%;
+        line-height: 100%;
+    }
+    
+    #summary {
+        font-size: 100%;
+        line-height: 130%;
+    }
+    
+    .section1 h2 {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .section1 p {
+        font-size: 80%;
+        line-height: 100%;
+    }
+    
+    .navbar li {
+        font-size: 12px;
+    }
+    
+    #summary {
+        font-size: 100%;
+        line-height: 130%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .section1 h2 {
+        font-size: 88%;
+    }
+    
+    .section1 p {
+        font-size: 70%;
+        line-height: 100%;
+    }
+    
+    #summary {
+        font-size: 100%;
+        line-height: 130%;
+    }
+    
+    /* Animals */
+    .card li div {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
